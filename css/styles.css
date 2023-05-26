@@ -3,7 +3,7 @@
     --title:#2E2F42
 }   
 
-a {
+.link {
     text-decoration: none;
 }
 
@@ -13,6 +13,8 @@ ul {
 
 .body {
 font-family: "Roboto", sans-serif;
+color: var(--main-text);
+background-color: #FFFFFF;
 }
 
 .header {
@@ -25,21 +27,22 @@ font-family: "Roboto", sans-serif;
 font-family: "Raleway", sans-serif;
 Font style: ExtraBold;
 Font size: 18px;
-Line height: 1.16;
+font-weight: 800;
+Line height: 1.17;
+letter-spacing: 0.03em 
 text-decoration: none;
-color: var(--main-text);
+color:#4D5AE5;
 text-transform: uppercase;
 }
 
 .header-nav-logo span {
-color:#4D5AE5;
+color: var(--main-text);
 }
 
 .header-nav-list {
 
 }
 .header-nav-item {
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -175,7 +178,6 @@ color: #F4F4FD;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 color: #4D5AE5;
@@ -185,7 +187,6 @@ background-color: #F4F4FD;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
