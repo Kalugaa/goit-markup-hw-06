@@ -194,6 +194,10 @@ color: var(--title);
 color: #F4F4FD;
 }
 
+.alt-logo-footer {
+    color: #F4F4FD;
+}
+
 /*!---------------PORTFOLIO-----------*/
 
 .portfolio-main {
