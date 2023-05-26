@@ -25,26 +25,31 @@ color: var(--main-text);
 background-color: #FFFFFF;
 }
 
+/**--------------HEADER-----------------*/
+
 .header {
 }
 
 .header-nav {
 }
 
-.header-nav-logo {
+.logo {
 font-family: "Raleway", sans-serif;
 Font style: ExtraBold;
 font-size: 18px;
 font-weight: 800;
-Line height: 1.17;
-letter-spacing: 0.03em 
-text-decoration: none;
+Line-height: 1.17;
+letter-spacing: 0.03em;
 color:#4D5AE5;
 text-transform: uppercase;
 }
 
-.header-nav-logo span {
+.logo span {
 color: var(--main-text);
+}
+
+.header-nav-logo {
+
 }
 
 .header-nav-list {
@@ -169,8 +174,19 @@ color: #F4F4FD;
 
 /*!---------------PORTFOLIO-----------*/
 
+.portfolio-main {
+    background-color: #FFFFFF;
+}
+.portfolio-hero {
+}
+.btns-list {
+}
+.list {
+}
 .btns-list-item {
-  font-family: 'Roboto';
+}
+.btns-list-btn {
+  font-family: "Roboto", sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -179,10 +195,32 @@ text-align: center;
 letter-spacing: 0.04em;
 color: #4D5AE5;
 background-color: #F4F4FD;
+cursor: pointer;
 }
 
-.btns-list-item:hover:focus {
+.btns-list-btn:hover:hover {
    color: #FFFFFF;
    background-color: #404BBF;
-   cursor: pointer;
+}
+
+.btns-list-btn:focus {
+   color: #FFFFFF;
+   background-color: #404BBF;
+}
+
+.project-list {
+}
+.project-list-item {
+}
+.project-link {
+}
+.link {
+}
+.project-img {
+}
+.project-title {
+}
+.project-text {
+}
+.text {
 }
