@@ -45,7 +45,7 @@ text-transform: uppercase;
 }
 
 .alt-logo {
-color: var(--main-text);
+color: #2e2f42;
 }
 
 .header-nav-logo {
@@ -173,9 +173,9 @@ color: var(--title);
 .info-title {
 }
 .team-list {
-    background-color: #FFFFFF
 }
 .team-list-item {
+    background-color: #FFFFFF
 }
 .team-list-img {
 }
