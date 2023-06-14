@@ -72,6 +72,7 @@ img {
 .header {
 padding: 24px 0;
 border-bottom: 1px solid #E7E9FC;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -172,11 +173,12 @@ gap: 48px;
 
 .hero {
     padding: 188px 0;
-    background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%), url(../images/background-main.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/background-main.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .hero-title {
 font-weight: 700;
@@ -203,6 +205,7 @@ min-width: 169px;
 height: 56px;
 border-radius: 4px;
 border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .hero-btn:focus,
@@ -303,6 +306,7 @@ margin-bottom: 72px;
 .team-list-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list-img {
 }
@@ -325,6 +329,7 @@ margin-bottom: 72px;
 display: flex;
 gap: 24px;
 margin-top: 8px;
+justify-content: center;
 }
 
 .social-link {
@@ -335,7 +340,7 @@ margin-top: 8px;
     background-color: #4D5AE5;
     align-items: center;
     justify-content: center;
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -343,12 +348,17 @@ margin-top: 8px;
     background-color: #404BBF;
 }
 
+.social-icons {
+    fill: #f4f4fd;
+}
+
 /**----------CUSTOMERS---------- */
+
 .customers {
-     padding: 120px 0;
+    padding: 120px 0;
 }
-.container {
-}
+
+
 .customers-container {
 }
 .customers-title {
@@ -368,8 +378,6 @@ margin-bottom: 72px;
 .customers-link {
     width: 100%;
   height: 100%;
-  width: 100%;
-  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
@@ -384,15 +392,18 @@ margin-bottom: 72px;
     border-color: #404bbf;
   color: #404bbf;
 }
+
+.customers-icon {
+    fill: currentColor;
+}
+
 .customers-list-item {
     width: calc((100% - 120px) / 6);
   height: 88px;
     border: 1px solid #8E8F99;
 border-radius: 4px;
 }
-.customers-icon {
-    fill: currentColor;
-}
+
 /*?----------FOOTER----------*/
 
 .footer {
@@ -456,6 +467,7 @@ width: 100%;
     height: 40px;
 }
 .footer-icon {
+    fill:  #f4f4fd;
 }
 
 .backdrop {
@@ -553,19 +565,18 @@ cursor: pointer;
 padding: 12px 24px;
 border: 1px solid var(--btn-color);
 border-radius: 4px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btns-list-btn:hover:hover {
-   color: #FFFFFF;
-   background-color: #404BBF;
-   border: 1px solid transparent
-}
-
+.btns-list-btn:hover ,
 .btns-list-btn:focus {
    color: #FFFFFF;
    background-color: #404BBF;
    border: 1px solid transparent
+   box-shadow: зі значенням 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+
 
 .project-list {
     display: flex;
@@ -589,9 +600,8 @@ border-radius: 4px;
 
 .project-link:hover .app-text , 
 .project-link:focus .app-text {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translateY(0%);
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 .app-text { 
     position: absolute;
@@ -608,15 +618,18 @@ border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-img {
-    position: relative;
-  overflow: hidden;
 }
 
 .project-card {
 border: 1px solid #e7e9fc;
 border-top: none; 
 padding: 32px 16px;
-margin-bottom: 8px
+margin-bottom: 8px;
+}
+
+.project-block {
+    position: relative;
+    overflow: hidden;
 }
 .project-title {
     
