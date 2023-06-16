@@ -40,6 +40,12 @@ font-style: normal;
   overflow: hidden;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 body {
 font-family: "Roboto", sans-serif;
 color: var(--main-text);
@@ -473,6 +479,64 @@ width: 100%;
     fill:  #f4f4fd;
 }
 
+.subscribe-container {
+    margin-left: 80px;
+}
+.subscribe-icon {
+    position: absolute;
+    top: -53px;
+    left: 357px;
+    fill: #FFFFFF;
+}
+
+.subscribe-btn {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+    color: #FFFFFF;
+padding: 8px 64px 8px 24px;
+background: #4D5AE5;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #31D0AA;
+}
+
+.subscribe-button-container {
+position: relative;
+display: flex;
+gap: 24px;
+}
+
+.subscribe-input {
+    border: 1px solid #FFFFFF;
+color: #FFFFFF;
+border-radius: 4px;
+padding: 8px 16px;
+background-color: #2E2F42;;
+}
+
+.subscribe-input::placeholder {
+    font-size: 12px;
+line-height: 2.0;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+
+.subscribe-input:placeholder-shown {
+   border: 1px solid #FFFFFF;
+border-radius: 4px;
+}
+
+/*!-------------MODAL--------------  */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -483,11 +547,7 @@ width: 100%;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -500,7 +560,9 @@ width: 100%;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 24px;
 }
+
 .modal-button {
   position: absolute;
   top: 24px;
@@ -535,6 +597,27 @@ width: 100%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+input {
+    display: block;
+}
+
+.modal-title {
+    margin: 72px 24px;
+    align-items: center;
+}
+
+.modal-input {
+    border: 1px solid #4D5AE5;
+border-radius: 4px;
+}
+
+.modal-lable {
+    font-size: 12px;
+line-height: 1.17,
+letter-spacing: 0.04em;
+color: #8E8F99;
+
+}
 
 /*!---------------PORTFOLIO-----------*/
 
