@@ -601,24 +601,54 @@ input {
     display: block;
 }
 
+.modal-field {
+    margin-bottom: 8px;
+}
+
 .modal-title {
-    margin: 72px 24px;
+    margin: 72px 24px 16px 0;
     align-items: center;
+}
+
+.modal-label {
+    font-size: 12px;
+line-height: 1.17,
+letter-spacing: 0.04em;
+color: #8E8F99;
+}
+
+.modal-block {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+  top: -36px;
+  left: 24px;
 }
 
 .modal-input {
     border: 1px solid #4D5AE5;
 border-radius: 4px;
+width: 360px;
+    height: 40px;
+    padding-left: 38px;
 }
 
-.modal-lable {
-    font-size: 12px;
+.modal-textarea {
+    width: 360px;
+    height: 120px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.modal-textarea::placeholder {
+font-weight: 400;
+font-size: 12px;
 line-height: 1.17,
 letter-spacing: 0.04em;
-color: #8E8F99;
-
+color: rgba(46, 47, 66, 0.4);
 }
-
 /*!---------------PORTFOLIO-----------*/
 
 .portfolio-main {
