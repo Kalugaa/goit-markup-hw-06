@@ -728,9 +728,6 @@ textarea {
 
 .modal-check-span {
   display: inline-flex;
-}
-
-.check-text span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
