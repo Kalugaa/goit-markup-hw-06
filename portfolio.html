@@ -31,10 +31,12 @@
           >
           <ul class="header-nav-list list">
             <li>
-              <a class="header-nav-item link" href="./index.html">Studio</a>
+              <a class="header-nav-item link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <a class="header-nav-item link current" href="./portfolio.html"
+              <a class="header-nav-item link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -57,6 +59,87 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-open" data-menu-open  >
+          <svg class="burger-open-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="burger-menu is-hidden" data-menu >
+        <div class="burger-menu-nav">
+          <button type="button" class="burger-close" data-menu-close>
+            <svg class="burger-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-modal"></use>
+            </svg>
+          </button>
+          <ul class="header-menu-list list">
+            <li class="header-menu-item">
+              <a class="header-menu-link link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="burger-menu-adress>
+          <adress class="menu-adress">
+            <ul class="contacts-menu-list list">
+              <li class="contacts-menu-list-item">
+                <a
+                  class="contacts-menu-list-link link alt-color"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-menu-list-item">
+                <a
+                  class="contacts-menu-list-link link "
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </adress>
+  
+          <div class="social-header">
+            <ul class="header-social-list list">
+              <li class="header-social-item">
+                <a class="header-social-link" href="">
+                  <svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-social-item">
+                <a class="header-social-link" href=""
+                  ><svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="header-social-item">
+                <a class="header-social-link" href=""
+                  ><svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="header-social-item">
+                <a class="header-social-link" href=""
+                  ><svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 

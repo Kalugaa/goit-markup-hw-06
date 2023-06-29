@@ -23,7 +23,7 @@
   </head>
 
   <body class="body">
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-nav-logo logo link" href="./index.html"
@@ -59,19 +59,100 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-open" data-menu-open  >
+          <svg class="burger-open-svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="burger-menu is-hidden" data-menu >
+        <div class="burger-menu-nav">
+          <button type="button" class="burger-close" data-menu-close>
+            <svg class="burger-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-modal"></use>
+            </svg>
+          </button>
+          <ul class="header-menu-list list">
+            <li class="header-menu-item">
+              <a class="header-menu-link link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="burger-menu-adress>
+          <adress class="menu-adress">
+            <ul class="contacts-menu-list list">
+              <li class="contacts-menu-list-item">
+                <a
+                  class="contacts-menu-list-link link alt-color"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-menu-list-item">
+                <a
+                  class="contacts-menu-list-link link "
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </adress>
+  
+          <div class="social-header">
+            <ul class="header-social-list list">
+              <li class="header-social-item">
+                <a class="header-social-link" href="">
+                  <svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-social-item">
+                <a class="header-social-link" href=""
+                  ><svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="header-social-item">
+                <a class="header-social-link" href=""
+                  ><svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="header-social-item">
+                <a class="header-social-link" href=""
+                  ><svg class="header-social-icon" height="24" width="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!--MAIN SECTION-->
     <main class="main">
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container main-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--OUR FEATURES-->
       <section class="features">
@@ -174,6 +255,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/our-team-1.jpg 1x, ./images/our-team-1@x2.jpg 2x, ./images/our-team-1@x3.jpg 3x"
                 src="./images/our-team-1.jpg"
                 alt="Photo of Mark"
                 width="264"
@@ -216,6 +298,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/our-team-2.jpg 1x, ./images/our-team-2@x2.jpg 2x, ./images/our-team-2@x3.jpg 3x"
                 src="./images/our-team-2.jpg"
                 alt="Photo of Tom"
                 width="264"
@@ -259,6 +342,7 @@
               <img
                 class="team-list-img"
                 src="./images/our-team-3.jpg"
+                srcset="./images/our-team-3.jpg 1x, ./images/our-team-3@x2.jpg 2x, ./images/our-team-3@x3.jpg 3x"
                 alt="Photo of Camila"
                 width="264"
               />
@@ -301,6 +385,7 @@
               <img
                 class="team-list-img"
                 src="./images/our-team-4.jpg"
+                srcset="./images/our-team-4.jpg 1x, ./images/our-team-4@x2.jpg 2x, ./images/our-team-4@x3.jpg 3x"
                 alt="Photo of Daniel"
                 width="264"
               />
@@ -549,5 +634,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

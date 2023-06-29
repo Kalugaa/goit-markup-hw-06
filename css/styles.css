@@ -80,7 +80,10 @@ img {
 /**--------------HEADER-----------------*/
 
 .header {
-  max-height: 72px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-left: 16px;
+
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -115,60 +118,121 @@ img {
   margin-right: 76px;
 }
 
-.header-nav-list {
-  display: flex;
-  gap: 40px;
-  padding: 24px 0 24px;
-}
-.header-nav-item {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.header-nav-list,
+.contacts {
+  display: none;
 }
 
-.header-nav-item:hover,
-.header-nav-item:focus {
-  color: #404bbf;
+.burger-open {
+  background-color: transparent;
+  border: none;
+}
+
+.burger-open-svg {
+  fill: #2e2f42;
+  stroke: #2e2f42;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 24px 24px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+.burger-close {
+  display: block;
+  margin-left: auto;
+  border-radius: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.10000000149011612);
+  opacity: ;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+
+.burger-close-svg {
+  fill: rgba(46, 47, 66, 1);
+}
+.header-menu {
+}
+
+.header-menu-list {
+  margin-bottom: 35px;
+}
+
+.header-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.header-menu-link {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.contacts-menu-list {
+}
+.contacts-menu-list-link {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
+.contacts-menu-list-item {
+  margin-bottom: 40px;
+  max-width: 353px;
+}
+
+.contacts-menu-list-item:last-child {
+  margin-bottom: 48px;
+}
+
+.alt-color {
+  color: #4d5ae5;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+}
+
+.social-header {
+}
+.header-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+
+.header-social-item {
+}
+.header-social-link {
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.header-social-icon {
+  fill: #f4f4fd;
 }
 
 .current {
   position: relative;
-  color: #404bbf;
-}
-
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  display: block;
-  width: 100%;
-  border-radius: 2px;
-}
-
-.contacts {
-  font-style: normal;
-}
-.contacts-list {
-  display: flex;
-  gap: 40px;
-}
-
-.contacts-list-item {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-list-item.link:hover {
-  color: #404bbf;
-}
-
-.contacts-list-item.link:focus {
   color: #404bbf;
 }
 
@@ -181,30 +245,31 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 48px;
+  gap: 72px;
 }
 
 .hero {
-  padding: 188px 0;
+  padding: 112px 54px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-main.jpg);
+    url(../images/background-main-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 100%;
   margin: 0 auto;
 }
 .hero-title {
+  width: 320px;
+  font-size: 36px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  text-align: center;
-  max-width: 496px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: #fff;
 }
 
 .hero-btn {
@@ -488,7 +553,6 @@ img {
 }
 
 .subscribe-container {
-  /* margin-left: 80px; */
 }
 
 .social-footer {
@@ -513,8 +577,6 @@ input {
 }
 
 .footer-input {
-  /* width: 264px;
-  height: 40px; */
   width: 100vw;
   max-width: 398px;
   height: 40px;
