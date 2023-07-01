@@ -155,6 +155,10 @@
     gap: 64px 24px;
   }
 
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
   /**----------CUSTOMERS---------- */
 
   .customers {
@@ -385,8 +389,16 @@
 
   /*!-------------TEAM--------------*/
 
+  .team-container {
+  }
+
   .team-list {
     gap: 0 24px;
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+    max-width: 552px;
   }
 
   /**----------CUSTOMERS---------- */
