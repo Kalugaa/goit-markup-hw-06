@@ -190,6 +190,10 @@
     text-align: start;
   }
 
+  .footer-label {
+    width: 264px;
+  }
+
   .footer-input {
     max-width: 264px;
   }
@@ -201,6 +205,7 @@
 
   .footer-form {
     column-gap: 24px;
+    flex-wrap: nowrap;
   }
 
   .social-footer {
@@ -208,6 +213,8 @@
   }
 
   .subscribe-container {
+    max-width: 453px;
+    margin: 0;
   }
 
   /*?---------------- PORTFOLIO ----------------- */
