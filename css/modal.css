@@ -398,7 +398,6 @@
 
   .team-list-item {
     flex-basis: calc((100% - 72px) / 4);
-    max-width: 552px;
   }
 
   /**----------CUSTOMERS---------- */
