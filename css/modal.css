@@ -87,7 +87,7 @@
   /*?----------- MAIN -------------- */
 
   .hero {
-    padding: 112px 136px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -123,10 +123,8 @@
   }
 
   .hero-title {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
-    font-family: Roboto;
-    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
   }
@@ -278,7 +276,8 @@
   /*?----------- MAIN -------------- */
 
   .hero {
-    padding: 188px 472px;
+    padding: 188px 0;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -314,13 +313,7 @@
   }
 
   .hero-title {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    text-align: center;
-    width: 496px;
   }
 
   /*!----------FEATURES----------*/
